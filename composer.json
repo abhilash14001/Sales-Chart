@@ -1,0 +1,29 @@
+{
+    "name": "abhilash/sales-charts",
+    "description": "Generate Charts for Sales Purposes",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Abhilash\\SalesCharts\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Abhilash",
+            "email": "abhilash14001@gmail.com"
+        }
+    ],
+    "require": {
+
+        "php": ">=7.4"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Providers\\SalesChart\\SalesChartServiceProvider"
+            ]
+        }
+    },
+    "version" : "1.0.0"
+}

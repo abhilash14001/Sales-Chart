@@ -23,6 +23,6 @@ class SalesChartServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadViewsFrom(__DIR__.'/views', 'laravelchart');
+        $this->loadViewsFrom(__DIR__.'/../views', 'charts_view');
     }
 }

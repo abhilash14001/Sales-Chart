@@ -1,6 +1,6 @@
 <?php
 
-namespace Providers\SalesChart;
+namespace SalesChartProviders;
 
 use Illuminate\Support\ServiceProvider;
 

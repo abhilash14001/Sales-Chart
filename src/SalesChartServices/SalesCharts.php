@@ -1,6 +1,6 @@
 <?php
 
-namespace SalesChartServices;
+namespace Abhilash\SalesCharts\SalesChartServices;
 
 use Carbon\Carbon;
 

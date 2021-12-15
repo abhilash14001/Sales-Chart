@@ -33,37 +33,6 @@ var salesChartData = {
 
     ]
 }
-var salesGraphChartOptions = {
-    maintainAspectRatio: false,
-    responsive: true,
-    legend: {
-        display: false
-    },
-    scales: {
-        xAxes: [{
-            ticks: {
-                fontColor: '#efefef'
-            },
-            gridLines: {
-                display: false,
-                color: '#efefef',
-                drawBorder: false
-            }
-        }],
-        yAxes: [{
-            ticks: {
-                stepSize: 5000,
-                fontColor: '#efefef'
-            },
-            gridLines: {
-                display: true,
-                color: '#efefef',
-                drawBorder: false
-            }
-        }]
-    }
-}
-
 var salesChartOptions = {
     maintainAspectRatio: false,
     responsive: true,

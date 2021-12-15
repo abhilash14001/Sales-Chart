@@ -96,3 +96,33 @@ $chart = new SalesCharts($options_for_ongoing_project, $options_for_completed_pr
  
 return view('dashboard', compact('chart'));
 ```
+
+
+__View File__
+
+```
+@extends('layouts.app')
+
+@section('content')
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">Dashboard</div>
+
+                <div class="card-body">
+
+                    
+                    {!! $chart->renderHtml() !!}
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+@endsection
+
+@section('js')
+{!! $chart1->renderScripts() !!}
+@endsection

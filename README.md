@@ -92,7 +92,7 @@ use Abhilash\SalesCharts\SalesChartServices\SalesCharts;
                 'borderColor' => 'rgba(210, 214, 222, 1)'
             ],
         ];
-$chart = new SalesCharts($options_for_ongoing_project, $options_for_completed_project);
-
+$chart = new SalesCharts($options_for_ongoing_project, $options_for_completed_project);     //can pass either 1 or 2 arguments based on your requirement
+ 
 return view('dashboard', compact('chart'));
 ```

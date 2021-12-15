@@ -28,7 +28,7 @@ use Abhilash\SalesCharts\SalesChartServices\SalesCharts;
         $map_condition_for_completed = function ($func) {
 
 
-            if ($func->status != Projects::$status[0]) {
+            if ($func->status != 'completed') {
 
                 $func->price = 0;
             }
@@ -42,7 +42,7 @@ use Abhilash\SalesCharts\SalesChartServices\SalesCharts;
         $map_condition_for_ongoing = function ($func) {
 
 
-            if ($func->status != Projects::$status[1]) {
+            if ($func->status != 'ongoing') {
 
                 $func->price = 0;
             }
@@ -58,7 +58,7 @@ use Abhilash\SalesCharts\SalesChartServices\SalesCharts;
             'chart_type' => 'line',
             'label_name' => 'Completed',
             'chart_title' => 'sales_price',
-            'model' => Projects::class,
+            'model' => Projects::class,                //model name to be entered
             'order_by' => 'project_submit_date',
             'label_field' => 'project_submit_date',
             'group_by' => $groupBy,
@@ -75,7 +75,7 @@ use Abhilash\SalesCharts\SalesChartServices\SalesCharts;
             'chart_type' => 'line',
             'label_name' => 'Ongoing',
             'chart_title' => 'sales_price',
-            'model' => Projects::class,
+            'model' => Projects::class,                                 //model name to be entered
 
   'order_by' => 'project_submit_date',
             'label_field' => 'project_submit_date',

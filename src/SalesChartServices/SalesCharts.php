@@ -42,13 +42,28 @@ class SalesCharts
                 $opts[$key]['chart_options']['borderColor']=  'rgba(210, 214, 222, 1)';
 
             }
+            if(!isset($opt['chart_options']['pointRadius'])) {
+                $opts[$key]['chart_options']['pointRadius'] = 'false';
+            }
+
+            if(!isset($opt['chart_options']['pointColor'])) {
+                $opts[$key]['chart_options']['pointColor'] = 'rgba(210, 214, 222, 1)';
+            }
+
+            if(!isset($opt['chart_options']['pointStrokeColor'])) {
+                $opts[$key]['chart_options']['pointStrokeColor'] = '#c1c7d';
+            }
+
+            if(!isset($opt['chart_options']['pointHighlightFill'])) {
+                $opts[$key]['chart_options']['pointHighlightFill'] = '#fff';
+            }
+
+            if(!isset($opt['chart_options']['pointHighlightStroke'])) {
+                $opts[$key]['chart_options']['pointHighlightStroke'] = 'rgba(220,220,220,1)';
+            }
 
 
-            $opts[$key]['chart_options']['pointRadius'] = 'false';
-            $opts[$key]['chart_options']['pointColor'] = 'rgba(210, 214, 222, 1)';
-            $opts[$key]['chart_options']['pointStrokeColor'] = '#c1c7d1';
-            $opts[$key]['chart_options']['pointHighlightFill'] = '#fff';
-            $opts[$key]['chart_options']['pointHighlightStroke'] = 'rgba(220,220,220,1)';
+
 
         }
 

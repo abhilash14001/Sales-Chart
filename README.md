@@ -124,5 +124,5 @@ __View File__
 @endsection
 
 @section('js')
-{!! $chart1->renderScripts() !!}
+{!! $chart->renderScripts() !!}
 @endsection

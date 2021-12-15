@@ -7,7 +7,7 @@ composer require abhilash/sales-chart
 ```
 ## Usage
 
-![Sales Charts - Projects which is ongoing and completed](https://vymaps.team24seven.online/assets/images/chart.png)
+![Sales Charts - Projects which is ongoing and completed](https://camo.githubusercontent.com/d07c2596aaaf2d9ad35dcb5ecd252fd1b1c29cdbe012483b6a6393cba9de4081/68747470733a2f2f76796d6170732e7465616d3234736576656e2e6f6e6c696e652f6173736574732f696d616765732f63686172742e706e67)
 
 If you want to generate a chart above, grouping __project_price__ by month and year of __project_submit_date__ or __created_at__ value according to your choice, here's the code.
 

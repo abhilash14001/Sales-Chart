@@ -167,6 +167,17 @@ class SalesCharts
             throw new \Exception("Model $model Does Not Exists");
         }
 
+        if(isset($this->options[0]['relation_load'])){
+
+            return $this->options[0]['model']::with($this->options[0]['relation_load'])->when(isset($this->options[0]['order_by']), function ($func) {
+
+                return $func->orderBy($this->options[0]['order_by']);
+
+            })->when(isset($this->options[0]['conditions']), function ($func) {
+
+                return $func->where($this->options[0]['conditions']);
+            })->get();
+        }
 
         return $this->options[0]['model']::when(isset($this->options[0]['order_by']), function ($func) {
 
@@ -188,7 +199,17 @@ class SalesCharts
 
             $model = $opt['model']::query();
             $cond = $opt['conditions'] ?? null;
+            if(isset($this->options[0]['relation_load'])){
 
+                $model->with($this->options[0]['relation_load'])->when(isset($this->options[0]['order_by']), function ($func) {
+
+                    return $func->orderBy($this->options[0]['order_by']);
+
+                })->when(isset($this->options[0]['conditions']), function ($func) {
+
+                    return $func->where($this->options[0]['conditions']);
+                })->get();
+            }
 
             if (isset($opt['join_condition']) && isset($opt['join_type'])) {
 

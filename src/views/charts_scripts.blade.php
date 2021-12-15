@@ -37,7 +37,7 @@ var salesChartOptions = {
     maintainAspectRatio: false,
     responsive: true,
     legend: {
-        display: false
+        display: true
     },
     scales: {
         xAxes: [{
